@@ -19,17 +19,18 @@
     </head>
     <style>
         body {
-            background-color:#808080;
+            background-color:#000000;
         }
         .user {
             float: right;
         }
     </style>
     <body>
-        <center><h1><b>PHP/ARRAY</b></h1></center>
+       
         <hr/>
         <nav>
-           &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none"> LISTAGEM |</a><a href="gravar.php" style="color: white; text-decoration: none"> SALVAR DADOS</a>
+           &nbsp;&nbsp;<a href="inicial.php" style="color: white; text-decoration: none">HOME |</a><a href="listagem.php" style="color: white; text-decoration: none">  PRODUTOS |</a><a href="gravar.php" style="color: white; text-decoration: none"> SALVAR DADOS |</a><a href="registrodiario.php" style="color white; text-decoration; none"> REGISTRO DIARIO</a> 
+
            <div class="user">
                 <b style="color: white"><?php echo $nomes[$id]; ?> |</b> <a href="sair.php" style="color: white; text-decoration: none">SAIR</a>&nbsp;&nbsp;
            </div>
