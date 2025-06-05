@@ -1,0 +1,25 @@
+<?php
+ session_start();
+
+ function calcularTaxadeProducao($produzido, $meta){
+    if ($meta ===0) return 0; 
+     
+    return($produzido/$meta)* 100;
+    header("Location: inicial.php");
+    
+ }
+
+
+ function calcularTaxaderefugo($refugo, $produzido){
+    if ($produzido ===0) return 0; 
+     
+    return($refugo/$produzido)* 100;
+    header("Location: registrodiario.php");
+ }
+
+ function calcularTempodeProducao($produzido, $horas){
+    if ($horas ===0) return 0; 
+     
+    return $produzido/$horas;
+    header("Location: listagem.php");
+ }
